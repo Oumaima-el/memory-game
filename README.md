@@ -52,7 +52,7 @@ To play the game, simply open `index.html` in your web browser. The game provide
 
 The score is calculated based on the following formula:
 
-score = matches _ 20 - misses _ 5 - moves \* 1
+score = matches * 20 - misses * 5 - moves * 1
 
 - `matches`: Number of successfully matched pairs.
 - `misses`: Number of times cards were flipped and didn't match.
