@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-board">
+      <div id="board-header">
+        <h1>Memory Game</h1>
+        <button type="submit" onclick="restart()">Restart</button>
+        <div id="score-board">
+          <h3 id="moves">Moves : 0</h3>
+          <h3 id="matches">Matches : 0</h3>
+          <h3 id="misses">Misses : 0</h3>
+        </div>
+      </div>
+      <div id="board-body"></div>
+    </div>
+    <div id="winner-modal-container">
+      <div id="winner-modal">
+        <h2>Congratulations</h2>
+        <h1 id="score">Score : 0</h1>
+        <h2>You won!!!</h2>
+        <div>
+          <button type="submit" onclick="restart()">Replay</button>
+        </div>
+      </div>
+    </div>
+    <div id="start-game-modal-container">
+      <div id="start-game-modal">
+        <h1>Start game</h1>
+        <div id="btns">
+          <button type="submit" onclick="createBoard(4)">4x4</button>
+          <button type="submit" onclick="createBoard(6)">6x6</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
